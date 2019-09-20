@@ -239,7 +239,7 @@ if %color2%==7 echo 6f >> .\SYSTEM\APPLETS\color7.clr && goto menu
 if %color2%==8 echo 3f >> .\SYSTEM\APPLETS\color8.clr && goto menu
 goto menu
 :website
-start iexplore "https://sites.google.com/view/elitetechnologiesweb/nyraos"
+start iexplore "https://github.com/Jessica-Fawkes/NyraOS"
 goto menu
 :about
 cls
