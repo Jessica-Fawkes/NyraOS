@@ -33,3 +33,10 @@ echo Sorry, but that function is not allowed.
 echo Please try again.
 pause
 goto menu
+:help
+cls
+echo To playback a file, simply type the name, 
+echo as well as the extension. (With dot!)
+echo Example: jessica_music.mp3
+pause
+goto menu
