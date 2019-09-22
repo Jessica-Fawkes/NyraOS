@@ -91,33 +91,13 @@ echo ---------------------------------
 echo 1) Google
 echo 2) Bing
 echo 3) Yahoo
-echo 4) Bookmarks
-echo 5) Go Back
+echo 4) Go Back
 echo ---------------------------------
-choice /c 12345>nul
+choice /c 1234>nul
 if %errorlevel%==1 start iexplore.exe "https://google.com" && goto menu
 if %errorlevel%==2 start iexplore.exe "https://bing.com" && goto menu
 if %errorlevel%==3 start iexplore.exe "https://yahoo.com" && goto menu
-if %errorlevel%==4 goto bookmarks
-if %errorlevel%==5 goto web
-:bookmarks
-cls
-if exist \SYSTEM\bookmark1.setting goto bookmarkchoose
-if not exist \SYSTEM\bookmark1.setting goto createbookmark
-:addbookmark
-cls
-echo You do not have any bookmarks created, %USERNAME%.
-echo Would you like to create one?
-echo --------------------------------------------------
-echo 1) Yes
-echo 2) No
-echo --------------------------------------------------
-choice /c 12>nul
-if %errorlevel%==1 goto generatebookmark
-if %errorlevel%==2 goto presets
-:generatebookmark
-cls
-echo What would 
+if %errorlevel%==4 goto menu
 :apps
 cls
 echo Here are the currently installed applets:
@@ -155,7 +135,7 @@ echo 6) Go Back
 echo 7) Reset Nyra OS
 echo 8) View your License Key
 echo -----------------------------
-choice /c 123456789>nul
+choice /c 12345678>nul
 if %errorlevel%==1 goto about
 if %errorlevel%==2 goto color
 if %errorlevel%==3 goto appletcolor
@@ -278,7 +258,7 @@ echo being developed. I don't know
 echo when they will be released,
 echo but sometime they will be.
 echo The current version name is:
-echo    Pellimore( version 3)
+echo    Pellimore( version 1)
 echo ---------------------------
 echo -Custom text color
 echo -Virus Scanner
